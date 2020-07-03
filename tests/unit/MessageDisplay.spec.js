@@ -4,6 +4,7 @@ import { getMessage } from '@/services/axios'
 import flushPromises from 'flush-promises'
 
 // jest will take the getMessage function, and in return it will give us a mocked getMessage function
+// Mocking the behavior of API calls without actually hit the backend server
 jest.mock('@/services/axios')
 
 beforeEach(() => {
